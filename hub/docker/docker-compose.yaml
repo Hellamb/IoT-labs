@@ -1,5 +1,4 @@
 version: "3.9"
-name: "road_vision__hub"
 services:
   mqtt:
     image: eclipse-mosquitto
