@@ -31,8 +31,9 @@ class FileDatasource:
             gps = self.readers[DataType.GPS].read()
 
             timestamp = datetime.now()
+            user_id = config.USER_ID
 
-            return AggregatedData(accelerometer, gps, timestamp)
+            return AggregatedData(user_id, accelerometer, gps, timestamp)
         except Exception as e:
             print(f"Error while reading data from sensors: {e}")
 
