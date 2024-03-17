@@ -7,6 +7,7 @@ from domain.gps import Gps
 
 @dataclass
 class AggregatedData:
+    user_id: int
     accelerometer: Accelerometer
     gps: Gps
-    time: datetime
+    timestamp: datetime
