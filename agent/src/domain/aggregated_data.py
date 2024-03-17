@@ -9,5 +9,4 @@ from domain.gps import Gps
 class AggregatedData:
     accelerometer: Accelerometer
     gps: Gps
-    timestamp: datetime
-    user_id: int
+    time: datetime
