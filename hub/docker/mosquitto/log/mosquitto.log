@@ -481,3 +481,6 @@
 1710593034: New client connected from 172.18.0.1:56316 as mqtt-explorer-65c1fe54 (p2, c1, k60).
 1710593036: New connection from 172.18.0.3:49471 on port 1883.
 1710593036: New client connected from 172.18.0.3:49471 as auto-45C34DFB-666B-2A32-CF9F-0E68FFEB14EF (p2, c1, k60).
+1710594235: Client auto-45C34DFB-666B-2A32-CF9F-0E68FFEB14EF closed its connection.
+1710594236: mosquitto version 2.0.18 terminating
+1710594236: Saving in-memory database to /mosquitto/data//mosquitto.db.
