@@ -62,7 +62,7 @@ class Datasource:
 
     def handle_received_data(self, data):
         # Update your UI or perform actions with received data here
-        Logger.debug(f"Received data: {data}")
+        Logger.debug(f"Received data: {json.loads(data)}")
         processed_agent_data_list = sorted(
             [
                 ProcessedAgentData(**processed_data_json)
@@ -72,8 +72,8 @@ class Datasource:
         )
         new_points = [
             (
-                processed_agent_data.latitude,
                 processed_agent_data.longitude,
+                processed_agent_data.latitude,
                 processed_agent_data.road_state,
             )
             for processed_agent_data in processed_agent_data_list
